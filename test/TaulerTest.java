@@ -99,4 +99,10 @@ class TaulerTest {
     void hasGuanyatFalse() {
         assertFalse(this.tauler.hasGuanyat());
     }
+
+
+
 }
+
+
+
