@@ -26,7 +26,22 @@ class PuntuacioTest {
         this.puntuacio = new Puntuacio();
 
     }
+    @Test
+    void comprebaParaules(String praulaEndv){
+        String[] paraulaEndv = {"p","e","i","x"};
+        for (int i = 0; i < paraulaEndv.length; i++) {
+            String prova = null;
+            paraulaEndv[i] = prova;
+            System.out.println(prova);
+            assertTrue(Arrays.asList(puntuacio.getLetresBonus()).contains(prova));
 
+
+        }
+        //Querermos comprobar que cuando se le otorga una palabra con letras bonus las identifica .
+
+
+
+    }
     @ParameterizedTest
     /*
     * COMENTARIO 4 caso de prueba
@@ -38,10 +53,10 @@ class PuntuacioTest {
         String paraula = puntuacio.getParaulaSecretaDificultat(noMatch);
        if (noMatch == 0){
            assertEquals("err", paraula);
-           System.out.println("buen");
+           System.out.println("Test correcto ");
 
        }else{
-           //retorna al metodo de abajo
+           System.out.println("Test fallido ");
        }
 
     }
@@ -80,7 +95,6 @@ class PuntuacioTest {
     }
     @Test
     void getTime(){}
-
     @ParameterizedTest
     /*
     * COMENTARIO 2 caso de preueba

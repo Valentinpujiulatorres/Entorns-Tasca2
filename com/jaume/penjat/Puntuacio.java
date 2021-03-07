@@ -15,6 +15,10 @@ public class Puntuacio {
     private final String[] paraules3 = {"escombraries","escopinyes","engronxador","desnonament","malhauradament","malbaratament",};
     private final String[] letresBonus = {"x", "h", "y"};
 
+    public String[] getLetresBonus() {
+        return letresBonus;
+    }
+
     public String[] getParaules1() {
         return paraules1;
     }
